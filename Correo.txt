@@ -1,0 +1,7 @@
+[CORREO]
+EMISOR = nitostest@gmail.com
+CONTRA = Hola2021
+RECEPTOR = prueb.correo@outlook.com
+ASUNTO = Paris, Torre Eifel
+DESCRIP = Correo de Prueba
+FILE = Imagen.jpg

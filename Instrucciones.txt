@@ -1,0 +1,26 @@
+PROGRAMACION DE CIBERSEGURIDAD 
+
+Para poder usar el script se nesecita hacer uso de los parametros necesarios dependiendo de la accion que deseemos, ya sea envio de correos electronicos, cifrado de mensajes, obtencion de metadata en imagenes, uso del webscraping a paginas o revisar sitios de internet para revisar su seguridad.
+
+
+   A continuacion se describe el funcionamiento de cada parametro:
+ 
+  [ -h ]        -->      Desplega el menu de acciones
+  [ -op ]       -->      Se escoge la accion deseada como tarea a realizar
+  [ -path ]     -->      Asigna la ruta especifica de una carpeta
+  [ -config ]   -->      Selecciona el archivo de Configuracion previamente desarrollado
+  [ -msg ]      -->      Se introduce un mensaje en texto para cifrar
+  [ -clave ]    -->      Se introduce una clave en texto con la que sera cifrado el mensaje
+  [ -url ]      -->      Asigna la direccion web del sitio a descargar imagenes, pdf y sub enlaces
+  [ -api ]      -->      Ingresa una API key de VirusTotal para la validacion
+
+
+Para poder cifrar un mensaje deberas ingresar un mensaje de tipo cadena de texto entre comillas, por ejemplo "El carro es azul", no importa el uso de mayusculas o espacios mientras esten las comillas, luego necesita una clave la cual se debe ingresar de tipo cadena de caracter y entre comillas, SIN ESPACIOS por ejemplo "BLUE" no importan las mayusculas solo los espacios.
+
+En el caso de envio de correo electronicos existe una archivo de configuracion llamado "Correo.txt" el cual debera ser editado cada vez que sea desee enviar un correo a un destinatario distinto o con un remitente diferente.
+
+Para analizar si un sitio web esta libre de virus se debe tomar en cuenta que debe ingresar dos parametros importantes, una api key y un sitio a analizar, ya que sin no funciona
+
+Si deseas obtener la Metadata de cada imagen debes tener en cuenta la ruta donde se encuentran las imagenes y esta es la que debes ingresar en el parametro -path y al final se te generara una carpeta con todos los archivos Metadata de las imagenes que estaban en la carpeta
+
+En caso de que desees hacer uso de WebScraping solo se te requerira un enlace de un sitio web del cual se descargaran los archivos pdf, las imagenes y se generara un archivo .txt con los sub enlaces encontrados, todo esto se guardara en una carpeta llamada WebScraping
